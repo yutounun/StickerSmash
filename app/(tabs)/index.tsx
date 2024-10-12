@@ -53,7 +53,6 @@ export default function Index() {
   };
 
   const onAddSticker = () => {
-    console.log("emoji open");
     setIsModalVisible(true);
     console.log("isModalVisible :", isModalVisible);
   };
@@ -79,7 +78,7 @@ export default function Index() {
       }
     } else {
       try {
-        const dataUrl = await domtoimage.toJpeg(imageRef.current, {
+        const dataUrl = await domtoimage.toJpeg(imageRef.current as any, {
           quality: 0.95,
           width: 320,
           height: 440,

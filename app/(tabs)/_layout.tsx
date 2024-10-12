@@ -1,5 +1,4 @@
 import { Tabs } from "expo-router";
-/* @tutinfo Import <CODEIonicons</CODE> icon set.*/
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function TabLayout() {
@@ -22,7 +21,6 @@ export default function TabLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color, focused }) => (
-            /* @tutinfo The <CODE>focused</CODE> param allows us to change a tab's icon and label behavior when it is active and inactive.*/
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}
               color={color}
@@ -36,7 +34,6 @@ export default function TabLayout() {
         options={{
           title: "About",
           tabBarIcon: ({ color, focused }) => (
-            /* @tutinfo */
             <Ionicons
               name={
                 focused ? "information-circle" : "information-circle-outline"
